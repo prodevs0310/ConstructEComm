@@ -3,8 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{DDACECE5-1DC8-4FF0-96F3-4E8A9420E0E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F0FEDDDA-ED42-4345-9247-6CEA2D8AD720}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9D3A802E-3D05-4DB5-91B3-5E4D80B62001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructEComm.Core", "ConstructEComm.Core\ConstructEComm.Core.csproj", "{F22A55BF-93F4-4CC4-A802-1195DA4ADA3A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22A55BF-93F4-4CC4-A802-1195DA4ADA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22A55BF-93F4-4CC4-A802-1195DA4ADA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22A55BF-93F4-4CC4-A802-1195DA4ADA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22A55BF-93F4-4CC4-A802-1195DA4ADA3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F22A55BF-93F4-4CC4-A802-1195DA4ADA3A} = {DDACECE5-1DC8-4FF0-96F3-4E8A9420E0E2}
 	EndGlobalSection
 EndGlobal
