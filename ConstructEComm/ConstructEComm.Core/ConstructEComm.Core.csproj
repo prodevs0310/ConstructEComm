@@ -40,8 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ashish\Class1.cs" />
+    <Compile Include="Ashish\TestFromAshish.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shardul\AshishSystem.cs" />
     <Compile Include="Shardul\Class1.cs" />
   </ItemGroup>
   <ItemGroup />
