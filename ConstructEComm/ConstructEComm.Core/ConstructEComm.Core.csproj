@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Ashish\Class1.cs" />
     <Compile Include="Ashish\TestFromAshish.cs" />
+    <Compile Include="Ashish\TestRocket.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shardul\AshishSystem.cs" />
