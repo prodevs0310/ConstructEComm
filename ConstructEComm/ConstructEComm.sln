@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructEComm.Core", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructEComm.Data", "ConstructEComm.Data\ConstructEComm.Data.csproj", "{3D9B639F-B1C2-4B3A-B0B3-3AD894061694}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructEComm.Console", "ConstructEComm.Console\ConstructEComm.Console.csproj", "{7B125CAD-30FF-4027-A71C-3643AFB1579A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3D9B639F-B1C2-4B3A-B0B3-3AD894061694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D9B639F-B1C2-4B3A-B0B3-3AD894061694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D9B639F-B1C2-4B3A-B0B3-3AD894061694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B125CAD-30FF-4027-A71C-3643AFB1579A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B125CAD-30FF-4027-A71C-3643AFB1579A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B125CAD-30FF-4027-A71C-3643AFB1579A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B125CAD-30FF-4027-A71C-3643AFB1579A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,5 +40,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{79F82078-CD24-4379-AD4C-281DA8A2AB2A} = {28798880-540D-4FC9-B1F9-DA78C7256C22}
 		{3D9B639F-B1C2-4B3A-B0B3-3AD894061694} = {28798880-540D-4FC9-B1F9-DA78C7256C22}
+		{7B125CAD-30FF-4027-A71C-3643AFB1579A} = {9438D97E-E72F-4BDF-8007-D50A218A11C5}
 	EndGlobalSection
 EndGlobal
