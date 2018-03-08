@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ConstructEComm.Core.Domain.Seller
 {
     public class Seller : BaseEntity 
@@ -11,8 +6,14 @@ namespace ConstructEComm.Core.Domain.Seller
         public Seller()
         {
             this.BusinessDetail = new BusinessDetail();
+            this.BankDetail = new BankDetail();
+            this.StoreDetail = new StoreDetail();
         }
 
         public BusinessDetail BusinessDetail { get; set; }
+
+        public BankDetail BankDetail { get; set; }
+
+        public StoreDetail StoreDetail { get; set; }
     }
 }

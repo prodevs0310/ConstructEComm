@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,10 +51,14 @@
   <ItemGroup>
     <Compile Include="ConstructECommContext.cs" />
     <Compile Include="EfRepository.cs" />
-    <Compile Include="IDbContext.cs" />
     <Compile Include="Mapping\Category\CategoryMap.cs" />
     <Compile Include="Mapping\ConstructECommTypeConfiguration.cs" />
     <Compile Include="Mapping\Seller\SellerMap.cs" />
+    <Compile Include="Migrations\201803080251526_InitialCreate.cs" />
+    <Compile Include="Migrations\201803080251526_InitialCreate.Designer.cs">
+      <DependentUpon>201803080251526_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,7 +72,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Initializers\" />
+    <EmbeddedResource Include="Migrations\201803080251526_InitialCreate.resx">
+      <DependentUpon>201803080251526_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,5 +6,7 @@ namespace ConstructEComm.Core.Domain.Category
         public string Name { get; set; }
 
         public int Parent { get; set; }
+
+        public string Description { get; set; }
     }
 }

@@ -52,8 +52,10 @@
     <Compile Include="CommonHelper.cs" />
     <Compile Include="Data\IRepository.cs" />
     <Compile Include="Domain\Category\SellingCategory.cs" />
+    <Compile Include="Domain\Seller\BankDetail.cs" />
     <Compile Include="Domain\Seller\BusinessDetail.cs" />
     <Compile Include="Domain\Seller\Seller.cs" />
+    <Compile Include="Domain\Seller\StoreDetail.cs" />
     <Compile Include="Extensions\CommonExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,14 +10,6 @@ namespace ConstructEComm.Data
 {
     public partial class EfRepository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly IDbContext _context;
-        private IDbSet<T> _entities;
-
-        public EfRepository(IDbContext context)
-        {
-            this._context = context;
-        }
-
         protected string GetFullErrorText(DbEntityValidationException exc)
         {
             var msg = string.Empty;
@@ -39,132 +31,52 @@ namespace ConstructEComm.Data
                 entry.State = EntityState.Unchanged;
             }
 
-            this._context.SaveChanges();
             return fullErrorText;
         }
 
-        public virtual T GetById(object id)
+        public T GetById(object id)
         {
-            return this.Entities.Find(id);
+            throw new NotImplementedException();
         }
 
-
-        public virtual void Insert(T entity)
+        public void Insert(T entity)
         {
-            try
-            {
-                if (entity == null)
-                    throw new ArgumentNullException("Entity is null");
-
-                this.Entities.Add(entity);
-                this._context.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                throw new Exception(this.GetFullErrorTextAndRollbackEntityChanges(ex));
-            }
+            throw new NotImplementedException();
         }
-
-        protected virtual IDbSet<T> Entities
-        {
-            get
-            {
-                if (this._entities == null)
-                    this._entities = this._context.Set<T>();
-                return this._entities;
-            }
-        }
-
 
         public void Insert(IEnumerable<T> entities)
         {
-            try
-            {
-                if (entities == null)
-                    throw new ArgumentNullException("Inserted entities is null");
-                foreach (var entity in entities)
-                    this.Entities.Add(entity);
-
-                this._context.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                throw new Exception(this.GetFullErrorTextAndRollbackEntityChanges(ex));
-            }
+            throw new NotImplementedException();
         }
 
         public void Update(T entity)
         {
-            try
-            {
-                if (entity == null)
-                    throw new ArgumentNullException("updated entity is null");
-
-                this._context.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                throw new Exception(this.GetFullErrorTextAndRollbackEntityChanges(ex), ex);
-            }
+            throw new NotImplementedException();
         }
 
         public void Update(IEnumerable<T> entities)
         {
-            try
-            {
-                if (entities == null)
-                    throw new ArgumentNullException("updated entity is null");
-
-                this._context.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                throw new Exception(this.GetFullErrorTextAndRollbackEntityChanges(ex), ex);
-            }
+            throw new NotImplementedException();
         }
 
         public void Delete(T entity)
         {
-            try
-            {
-                if (entity == null)
-                    throw new ArgumentNullException("delete entity is null");
-
-                this.Entities.Remove(entity);
-                this._context.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                throw new Exception(this.GetFullErrorTextAndRollbackEntityChanges(ex), ex);
-            }
-
+            throw new NotImplementedException();
         }
 
         public void Delete(IEnumerable<T> entities)
         {
-            try
-            {
-                if (entities == null)
-                    throw new ArgumentNullException("delete entities are null");
-                foreach (var entity in entities)
-                    this.Entities.Remove(entity);
-
-                this._context.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                throw new Exception(this.GetFullErrorTextAndRollbackEntityChanges(ex), ex);
-            }
+            throw new NotImplementedException();
         }
 
         public IQueryable<T> Table
         {
-            get { return this.Entities; }
+            get { throw new NotImplementedException(); }
         }
 
         public IQueryable<T> TableNoTracking
         {
-            get { return this.Entities.AsNoTracking(); }
+            get { throw new NotImplementedException(); }
         }
     }
 }

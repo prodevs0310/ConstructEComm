@@ -11,6 +11,7 @@ namespace ConstructEComm.Data.Mapping.Category
             this.Property(x => x.Name).IsRequired().HasMaxLength(100);
             this.Property(x => x.CreatedOn);
             this.Property(x => x.ModifiedOn);
+            this.Property(x => x.Description).HasMaxLength(500);
         }
     }
 }
