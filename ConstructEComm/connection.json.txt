@@ -1,0 +1,7 @@
+{
+	datasource:USER,
+	database:MCC,
+	userid:sa,
+	password:tsft#12345
+		
+}
